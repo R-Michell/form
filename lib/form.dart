@@ -8,14 +8,14 @@ class FormPage extends StatefulWidget {
 }
 
 class _FormPageState extends State<FormPage> {
-  // Controladores para obtener los datos ingresados en el formulario
+
   final TextEditingController nameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
   final TextEditingController subjectController = TextEditingController();
   final TextEditingController descriptionController = TextEditingController();
 
-  // Función para mostrar el diálogo con los datos ingresados
+
   void _showComplaintDialog() {
     showDialog(
       context: context,
@@ -37,7 +37,7 @@ class _FormPageState extends State<FormPage> {
             TextButton(
               child: const Text('Cerrar'),
               onPressed: () {
-                Navigator.of(context).pop(); // Cerrar la ventana emergente
+                Navigator.of(context).pop(); 
               },
             ),
           ],
